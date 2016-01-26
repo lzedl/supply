@@ -1,0 +1,20 @@
+---
+user:             zed
+logging:
+  version:        1
+  formatters:
+    generic:
+      format:     "%(asctime)s [%(levelname)8s]: %(message)s"
+      datefmt:    "%Y-%m-%d %H:%M:%S"
+  handlers:
+    file:
+      class:      logging.handlers.RotatingFileHandler
+      level:      DEBUG
+      formatter:  generic
+      filename:   /var/log/zsupply.log
+      encoding:   utf8
+      maxBytes:   1048576 # 1 Mb
+  loggers:
+    xrandr:
+      level:      DEBUG
+      handlers:   ["file"]

@@ -1,0 +1,5 @@
+zsupply (0.1) unstable; urgency=low
+
+  * Initial release. Add z-autoset-screen.py script
+
+ -- Alexandr Litovchenko <zedlaa@gmail.ru>  Tue, 26 Jan 2016 11:47:20 +0300
